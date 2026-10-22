@@ -1,0 +1,47 @@
+# ── OS generated files ───────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── Editor & IDE ─────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ── Logs ─────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+
+# ── Node (if you ever add a dev server) ──────────────────────────────
+node_modules/
+package-lock.json
+yarn.lock
+
+# ── Build output (not needed for this static project) ────────────────
+dist/
+build/
+.cache/
+
+# ── Environment & secrets ─────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Temporary files ───────────────────────────────────────────────────
+tmp/
+temp/
+*.tmp
+
+# ── Dev/test files ────────────────────────────────────────────────────
+securepass_test.mjs

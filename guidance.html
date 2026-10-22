@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Password Security Guidance — SecurePass</title>
+    <meta
+      name="description"
+      content="Practical, NIST-aligned password security checklists: passphrases, password managers, multi-factor authentication, passkeys, credential stuffing defense, and incident response."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Background grid & glow -->
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <!-- ══════════════ NAVIGATION BAR ══════════════ -->
+    <nav class="site-nav" aria-label="Main Navigation">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo" aria-label="SecurePass Home">
+          <span class="nav-logo-icon" aria-hidden="true">🛡️</span>
+          <span>Secure<span class="accent">Pass</span></span>
+        </a>
+
+        <button class="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="analyzer.html">Password Analyzer</a></li>
+          <li><a href="generator.html">Password Generator</a></li>
+          <li><a href="reports.html">Security Reports</a></li>
+          <li><a href="how-it-works.html">How Checks Work</a></li>
+          <li><a href="guidance.html" class="active">Security Guidance</a></li>
+          <li><a href="awareness.html">Awareness & Quiz</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ══════════════ MAIN CONTENT ══════════════ -->
+    <main class="page-container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="current">Security Guidance</span>
+      </nav>
+
+      <header class="page-header">
+        <h1><span class="title-icon" aria-hidden="true">📋</span> Password Security Best Practices</h1>
+        <p>Actionable, defensive security guidelines aligned with modern NIST SP 800-63B standards. Say goodbye to outdated advice.</p>
+      </header>
+
+      <div class="guidance-grid" style="max-width: 1000px; margin: 0 auto;">
+        <!-- Card 1: Passphrases -->
+        <article class="guidance-card">
+          <div class="guidance-card-header">
+            <span class="guidance-card-icon" aria-hidden="true">💬</span>
+            <h2 class="guidance-card-title">1. Creating High-Entropy Passphrases</h2>
+          </div>
+          <ul class="guidance-checklist">
+            <li>Choose 4 to 5 completely unrelated dictionary words (e.g., <code>cobalt-turnip-galaxy-anchor</code>).</li>
+            <li>Connect words with hyphens, underscores, or spaces to improve human legibility.</li>
+            <li>Avoid popular quotes, movie titles, song lyrics, and proverbs—attackers index cultural texts into dictionary lists.</li>
+            <li>Aim for at least 16 to 24 total characters for core accounts (primary email, bank, password manager).</li>
+          </ul>
+        </article>
+
+        <!-- Card 2: Password Managers -->
+        <article class="guidance-card">
+          <div class="guidance-card-header">
+            <span class="guidance-card-icon" aria-hidden="true">🗄️</span>
+            <h2 class="guidance-card-title">2. Use a Trusted Password Manager</h2>
+          </div>
+          <ul class="guidance-checklist">
+            <li>Generate unique, random 20+ character passwords for every website you visit.</li>
+            <li>Eliminate password reuse—if one site is breached, your other accounts remain completely untouched.</li>
+            <li>Protect your vault with one memorable, highly secure master passphrase and MFA.</li>
+            <li>Browser auto-fill features protect against spoofed phishing URLs that mimic real domains.</li>
+          </ul>
+        </article>
+
+        <!-- Card 3: MFA & Passkeys -->
+        <article class="guidance-card">
+          <div class="guidance-card-header">
+            <span class="guidance-card-icon" aria-hidden="true">🔑</span>
+            <h2 class="guidance-card-title">3. Multi-Factor Authentication &amp; Passkeys</h2>
+          </div>
+          <ul class="guidance-checklist">
+            <li>Prefer Authenticator Apps (TOTP) or Hardware Keys (FIDO2) over SMS text messages to prevent SIM-swapping.</li>
+            <li>Adopt FIDO2 WebAuthn Passkeys wherever supported—they are cryptographically bound to the domain and cannot be phished.</li>
+            <li>Store one-time account recovery codes in a secure, encrypted offline file or a physical safe.</li>
+            <li>Never approve unexpected push notifications on your phone (MFA fatigue defense).</li>
+          </ul>
+        </article>
+
+        <!-- Card 4: Credential Stuffing -->
+        <article class="guidance-card">
+          <div class="guidance-card-header">
+            <span class="guidance-card-icon" aria-hidden="true">🛡️</span>
+            <h2 class="guidance-card-title">4. Defeating Credential Stuffing</h2>
+          </div>
+          <ul class="guidance-checklist">
+            <li>Never use the same password for personal banking, corporate email, and entertainment apps.</li>
+            <li>Criminals maintain automated bots that ingest leaked databases and spray credentials into hundreds of online portals.</li>
+            <li>Use email alias forwarding services to obscure your primary email address on secondary services.</li>
+            <li>Monitor breach alert services (e.g. HaveIBeenPwned) to know when a platform you use was compromised.</li>
+          </ul>
+        </article>
+
+        <!-- Card 5: Account Recovery -->
+        <article class="guidance-card">
+          <div class="guidance-card-header">
+            <span class="guidance-card-icon" aria-hidden="true">❓</span>
+            <h2 class="guidance-card-title">5. Account Recovery &amp; Security Questions</h2>
+          </div>
+          <ul class="guidance-checklist">
+            <li>Do not answer security questions honestly with public facts (mother's maiden name, childhood street, high school).</li>
+            <li>Treat security questions like secondary random passwords: generate a random string and store it in your password manager.</li>
+            <li>Keep secondary recovery emails and phone numbers current so you never get locked out.</li>
+            <li>Change default administrative passwords on Wi-Fi routers, IoT cameras, and smart home appliances on day one.</li>
+          </ul>
+        </article>
+
+        <!-- Card 6: Incident Response -->
+        <article class="guidance-card">
+          <div class="guidance-card-header">
+            <span class="guidance-card-icon" aria-hidden="true">🚨</span>
+            <h2 class="guidance-card-title">6. Compromise Response Playbook</h2>
+          </div>
+          <ul class="guidance-checklist">
+            <li>Avoid arbitrary 30-day password rotations—modern standards prove forced rotations cause humans to pick predictable patterns.</li>
+            <li>Rotate credentials immediately when an active data breach or unauthorized session alert occurs.</li>
+            <li>Use the "Log out of all other active sessions" button in the account settings after updating your password.</li>
+            <li>Review recent login activity and audit third-party app permissions connected to your account.</li>
+          </ul>
+        </article>
+      </div>
+    </main>
+
+    <!-- ══════════════ FOOTER ══════════════ -->
+    <footer class="site-footer">
+      <div style="max-width: var(--page-w); margin: 0 auto; display: flex; flex-direction: column; gap: 0.5rem; align-items: center;">
+        <p><strong>SecurePass</strong> — Educational Cybersecurity &amp; Password Strength Platform.</p>
+        <p class="footer-note">🔒 Zero Data Collection: Passwords processed strictly client-side.</p>
+        <div style="display:flex; gap:1.2rem; flex-wrap:wrap; justify-content:center; margin-top:0.3rem;">
+          <a href="index.html">Home</a>
+          <a href="analyzer.html">Analyzer</a>
+          <a href="generator.html">Generator</a>
+          <a href="reports.html">Reports</a>
+          <a href="how-it-works.html">How Checks Work</a>
+          <a href="awareness.html">Quiz</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/nav.js"></script>
+  </body>
+</html>
