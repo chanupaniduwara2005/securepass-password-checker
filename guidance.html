@@ -28,31 +28,36 @@
     <div class="bg-grid" aria-hidden="true"></div>
     <div class="bg-glow" aria-hidden="true"></div>
 
-    <!-- ══════════════ NAVIGATION BAR ══════════════ -->
-    <nav class="site-nav" aria-label="Main Navigation">
-      <div class="nav-inner">
+    <!-- ══════════════ TOP NAVIGATION BAR ══════════════ -->
+    <header class="top-nav-wrap">
+      <nav class="top-nav" aria-label="Main Navigation">
         <a href="index.html" class="nav-logo" aria-label="SecurePass Home">
-          <span class="nav-logo-icon" aria-hidden="true">🛡️</span>
-          <span>Secure<span class="accent">Pass</span></span>
+          <div class="logo-shield-badge">
+            <svg class="logo-shield-svg" viewBox="0 0 24 24" width="28" height="28" fill="none">
+              <path d="M12 2L4 5V11C4 16.5 7.4 21.6 12 23C16.6 21.6 20 16.5 20 11V5L12 2Z" fill="#00E5A0" />
+              <path d="M12 8C10.9 8 10 8.9 10 10V11H9C8.45 11 8 11.45 8 12V16C8 16.55 8.45 17 9 17H15C15.55 17 16 16.55 16 16V12C16 11.45 15.55 11 15 11H14V10C14 8.9 13.1 8 12 8ZM11.2 11V10C11.2 9.56 11.56 9.2 12 9.2C12.44 9.2 12.8 9.56 12.8 10V11H11.2Z" fill="#070D17" />
+            </svg>
+          </div>
+          <div class="logo-copy">
+            <span class="logo-name">Secure<span class="accent-text">Pass</span></span>
+            <span class="logo-tagline">Stronger Passwords. Safer You.</span>
+          </div>
         </a>
 
-        <button class="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="analyzer.html">Password Analyzer</a></li>
-          <li><a href="generator.html">Password Generator</a></li>
-          <li><a href="reports.html">Security Reports</a></li>
-          <li><a href="how-it-works.html">How Checks Work</a></li>
-          <li><a href="guidance.html" class="active">Security Guidance</a></li>
-          <li><a href="awareness.html">Awareness & Quiz</a></li>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li><a href="index.html#analyse-card" class="nav-item">Analyse Password</a></li>
+          <li><a href="index.html#generator-modal" class="nav-item">Generate Password</a></li>
+          <li><a href="index.html#how-it-works-modal" class="nav-item">How It Works</a></li>
+          <li><a href="index.html#report-modal" class="nav-item">Report</a></li>
+          <li><a href="guidance.html" class="nav-item active">Guidance</a></li>
         </ul>
-      </div>
-    </nav>
+
+        <div class="nav-actions">
+          <a href="index.html#analyse-card" class="btn-nav-login">Checker</a>
+        </div>
+      </nav>
+    </header>
 
     <!-- ══════════════ MAIN CONTENT ══════════════ -->
     <main class="page-container">
