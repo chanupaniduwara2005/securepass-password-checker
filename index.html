@@ -5,17 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO -->
-<<<<<<< HEAD
     <title>SecurePass — Password Security Checker &amp; Generator</title>
     <meta
       name="description"
       content="Check your password strength instantly in real-time. SecurePass analyses length, common patterns, complexity, and common breaches — 100% client-side security."
-=======
-    <title>SecurePass — Password Strength Checker</title>
-    <meta
-      name="description"
-      content="Check your password strength instantly in your browser. SecurePass analyses length, patterns, and common weaknesses — 100% client-side, nothing is ever sent anywhere."
->>>>>>> db64188dcb810b9ffca9bfcbfd4a209378a4ff43
     />
     <meta name="robots" content="index, follow" />
 
@@ -23,11 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-<<<<<<< HEAD
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
-=======
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
->>>>>>> db64188dcb810b9ffca9bfcbfd4a209378a4ff43
       rel="stylesheet"
     />
 
@@ -35,7 +24,6 @@
   </head>
 
   <body>
-<<<<<<< HEAD
     <!-- ══════════════ AMBIENT BACKGROUND GLOW ══════════════ -->
     <div class="bg-mesh" aria-hidden="true"></div>
     <div class="bg-grid" aria-hidden="true"></div>
@@ -522,326 +510,10 @@
           </article>
         </div>
       </section>
-=======
-    <!-- ══════════════ BACKGROUND ══════════════ -->
-    <div class="bg-grid" aria-hidden="true"></div>
-    <div class="bg-glow" aria-hidden="true"></div>
-
-    <!-- ══════════════ HEADER ══════════════ -->
-    <header class="site-header">
-      <div class="header-inner">
-        <div class="logo">
-          <span class="logo-icon" aria-hidden="true">🛡️</span>
-          <span class="logo-text">Secure<span class="accent">Pass</span></span>
-        </div>
-        <p class="header-tagline">Password Strength Checker</p>
-      </div>
-    </header>
-
-    <!-- ══════════════ MAIN ══════════════ -->
-    <main class="main-layout">
-
-      <!-- ── LEFT COLUMN ── -->
-      <section class="card checker-card" aria-labelledby="checker-heading">
-        <h1 id="checker-heading" class="card-title">
-          <span class="title-icon" aria-hidden="true">🔍</span>
-          Analyse Your Password
-        </h1>
-
-        <!-- Privacy notice -->
-        <div class="privacy-banner" role="note">
-          <span class="privacy-icon" aria-hidden="true">🔒</span>
-          <span>
-            <strong>100% Private.</strong> Your password is processed entirely
-            in your browser and is <strong>never sent, saved, or logged</strong>
-            anywhere.
-          </span>
-        </div>
-
-        <!-- Password input -->
-        <div class="field-group">
-          <label class="field-label" for="password-input">Enter a password</label>
-          <div class="input-wrapper">
-            <span class="input-icon" aria-hidden="true">🔑</span>
-            <input
-              id="password-input"
-              class="password-input"
-              type="password"
-              placeholder="Type or paste your password…"
-              autocomplete="off"
-              autocorrect="off"
-              autocapitalize="off"
-              spellcheck="false"
-              aria-describedby="strength-label"
-            />
-            <button
-              id="toggle-visibility"
-              class="icon-btn"
-              type="button"
-              aria-label="Show password"
-              title="Show / hide password"
-            >
-              <span id="eye-icon" aria-hidden="true">👁️</span>
-            </button>
-            <button
-              id="clear-btn"
-              class="icon-btn"
-              type="button"
-              aria-label="Clear password"
-              title="Clear password"
-            >
-              ✕
-            </button>
-          </div>
-        </div>
-
-        <!-- Strength meter -->
-        <div class="strength-section">
-          <div class="strength-header">
-            <span class="strength-label-text" id="strength-label">Strength</span>
-            <span id="strength-badge" class="strength-badge badge-empty">—</span>
-          </div>
-          <div
-            class="meter-track"
-            role="progressbar"
-            aria-valuenow="0"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-label="Password strength meter"
-          >
-            <div id="meter-fill" class="meter-fill"></div>
-          </div>
-          <div class="meter-segments" aria-hidden="true">
-            <span>Weak</span><span>Fair</span><span>Good</span><span>Strong</span><span>Very Strong</span>
-          </div>
-        </div>
-
-        <!-- Score -->
-        <div class="score-row">
-          <div class="score-box">
-            <span class="score-number" id="score-number">0</span>
-            <span class="score-label">/ 100</span>
-          </div>
-          <p class="score-disclaimer">
-            ⚠️ This score is an <em>estimate</em> based on common patterns — not a
-            guarantee of security. Even a high score doesn't mean a password is
-            uncrackable.
-          </p>
-        </div>
-
-        <!-- Check results -->
-        <div class="checks-section">
-          <h2 class="section-subtitle">Security Checks</h2>
-          <ul class="checks-list" id="checks-list" aria-live="polite">
-            <li class="check-item check-neutral" id="check-length">
-              <span class="check-icon" aria-hidden="true">○</span>
-              <div class="check-text">
-                <strong>Length</strong>
-                <span class="check-detail" id="detail-length">Enter a password to begin</span>
-              </div>
-            </li>
-            <li class="check-item check-neutral" id="check-uppercase">
-              <span class="check-icon" aria-hidden="true">○</span>
-              <div class="check-text">
-                <strong>Uppercase letters (A–Z)</strong>
-                <span class="check-detail" id="detail-uppercase">—</span>
-              </div>
-            </li>
-            <li class="check-item check-neutral" id="check-lowercase">
-              <span class="check-icon" aria-hidden="true">○</span>
-              <div class="check-text">
-                <strong>Lowercase letters (a–z)</strong>
-                <span class="check-detail" id="detail-lowercase">—</span>
-              </div>
-            </li>
-            <li class="check-item check-neutral" id="check-numbers">
-              <span class="check-icon" aria-hidden="true">○</span>
-              <div class="check-text">
-                <strong>Numbers (0–9)</strong>
-                <span class="check-detail" id="detail-numbers">—</span>
-              </div>
-            </li>
-            <li class="check-item check-neutral" id="check-symbols">
-              <span class="check-icon" aria-hidden="true">○</span>
-              <div class="check-text">
-                <strong>Special symbols (!@#$…)</strong>
-                <span class="check-detail" id="detail-symbols">—</span>
-              </div>
-            </li>
-            <li class="check-item check-neutral" id="check-common">
-              <span class="check-icon" aria-hidden="true">○</span>
-              <div class="check-text">
-                <strong>Not a common password</strong>
-                <span class="check-detail" id="detail-common">—</span>
-              </div>
-            </li>
-            <li class="check-item check-neutral" id="check-repeated">
-              <span class="check-icon" aria-hidden="true">○</span>
-              <div class="check-text">
-                <strong>No excessive repeated characters</strong>
-                <span class="check-detail" id="detail-repeated">—</span>
-              </div>
-            </li>
-            <li class="check-item check-neutral" id="check-sequence">
-              <span class="check-icon" aria-hidden="true">○</span>
-              <div class="check-text">
-                <strong>No predictable sequences</strong>
-                <span class="check-detail" id="detail-sequence">—</span>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- ── RIGHT COLUMN ── -->
-      <div class="right-column">
-
-        <!-- Generator card -->
-        <section class="card generator-card" aria-labelledby="generator-heading">
-          <h2 id="generator-heading" class="card-title">
-            <span class="title-icon" aria-hidden="true">⚙️</span>
-            Password Generator
-          </h2>
-          <p class="card-subtitle">
-            Uses <code>crypto.getRandomValues()</code> — cryptographically
-            secure randomness built into your browser.
-          </p>
-
-          <!-- Options -->
-          <div class="gen-options">
-            <div class="option-row">
-              <label class="option-label" for="gen-length">
-                Length: <strong id="gen-length-display">16</strong>
-              </label>
-              <input
-                id="gen-length"
-                class="range-slider"
-                type="range"
-                min="8"
-                max="64"
-                value="16"
-                aria-label="Generated password length"
-              />
-            </div>
-
-            <div class="checkbox-grid">
-              <label class="checkbox-label" for="gen-uppercase">
-                <input id="gen-uppercase" type="checkbox" checked /> Uppercase (A–Z)
-              </label>
-              <label class="checkbox-label" for="gen-lowercase">
-                <input id="gen-lowercase" type="checkbox" checked /> Lowercase (a–z)
-              </label>
-              <label class="checkbox-label" for="gen-numbers">
-                <input id="gen-numbers" type="checkbox" checked /> Numbers (0–9)
-              </label>
-              <label class="checkbox-label" for="gen-symbols">
-                <input id="gen-symbols" type="checkbox" checked /> Symbols (!@#…)
-              </label>
-            </div>
-          </div>
-
-          <!-- Generated password output -->
-          <div class="gen-output-wrapper">
-            <code id="gen-output" class="gen-output" aria-live="polite" aria-label="Generated password">
-              Click generate to create a password
-            </code>
-          </div>
-
-          <div class="gen-actions">
-            <button id="generate-btn" class="btn btn-primary" type="button">
-              ⚡ Generate
-            </button>
-            <button id="copy-gen-btn" class="btn btn-secondary" type="button" aria-label="Copy generated password">
-              📋 Copy
-            </button>
-            <button id="use-gen-btn" class="btn btn-ghost" type="button" aria-label="Use generated password in checker">
-              ↑ Use in checker
-            </button>
-          </div>
-
-          <div id="copy-toast" class="copy-toast" role="status" aria-live="polite"></div>
-        </section>
-
-        <!-- How-it-works card -->
-        <section class="card info-card" aria-labelledby="info-heading">
-          <h2 id="info-heading" class="card-title">
-            <span class="title-icon" aria-hidden="true">📚</span>
-            How Each Check Works
-          </h2>
-
-          <details class="info-detail">
-            <summary class="info-summary">🔢 Length Check</summary>
-            <p>
-              Every extra character multiplies the number of combinations an
-              attacker must try. A 12-character password has roughly
-              <em>trillions</em> more combinations than an 8-character one.
-              Minimum recommended length is <strong>12 characters</strong>;
-              aim for 16+.
-            </p>
-          </details>
-
-          <details class="info-detail">
-            <summary class="info-summary">🔠 Character Variety</summary>
-            <p>
-              Using uppercase, lowercase, digits, and symbols expands the
-              "alphabet" an attacker must guess from. With only lowercase
-              letters the alphabet is 26; adding all four types brings it to
-              ~95. Larger alphabet = exponentially harder brute-force.
-            </p>
-          </details>
-
-          <details class="info-detail">
-            <summary class="info-summary">📋 Common Password Check</summary>
-            <p>
-              Attackers use <em>dictionary attacks</em> — lists of millions of
-              known weak passwords like <code>password123</code>,
-              <code>qwerty</code>, or <code>iloveyou</code>. If your password
-              appears in such a list it can be cracked in seconds regardless of
-              length.
-            </p>
-          </details>
-
-          <details class="info-detail">
-            <summary class="info-summary">🔁 Repeated Characters</summary>
-            <p>
-              Passwords like <code>aaabbbccc</code> or <code>111111</code> have
-              very low <em>entropy</em> — they carry less unpredictable
-              information than they appear to. Automated crackers detect and
-              exploit this pattern immediately.
-            </p>
-          </details>
-
-          <details class="info-detail">
-            <summary class="info-summary">📈 Predictable Sequences</summary>
-            <p>
-              Sequences like <code>1234</code>, <code>abcd</code>, or
-              <code>qwerty</code> are keyboard walks or numerical runs —
-              among the first things any cracker tries. They reduce your
-              effective password strength dramatically.
-            </p>
-          </details>
-
-          <details class="info-detail">
-            <summary class="info-summary">🎲 Why crypto.getRandomValues()?</summary>
-            <p>
-              JavaScript's <code>Math.random()</code> is <strong>not</strong>
-              cryptographically secure — its output can sometimes be predicted.
-              <code>crypto.getRandomValues()</code> uses the operating system's
-              secure random number generator, making it suitable for generating
-              real passwords.
-            </p>
-          </details>
-        </section>
-
-      </div>
-      <!-- end right column -->
-
->>>>>>> db64188dcb810b9ffca9bfcbfd4a209378a4ff43
     </main>
 
     <!-- ══════════════ FOOTER ══════════════ -->
     <footer class="site-footer">
-<<<<<<< HEAD
       <div class="footer-inner">
         <!-- Left: Brand -->
         <div class="footer-brand">
@@ -1065,14 +737,6 @@
     </div>
 
     <!-- Scripts -->
-=======
-      <p>
-        SecurePass · Built with vanilla HTML, CSS &amp; JS ·
-        <span class="footer-note">No passwords are ever transmitted or stored.</span>
-      </p>
-    </footer>
-
->>>>>>> db64188dcb810b9ffca9bfcbfd4a209378a4ff43
     <script src="script.js"></script>
   </body>
 </html>
