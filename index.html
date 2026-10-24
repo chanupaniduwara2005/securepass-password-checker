@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO -->
+<<<<<<< HEAD
+    <title>SecurePass — Password Security Checker &amp; Generator</title>
+    <meta
+      name="description"
+      content="Check your password strength instantly in real-time. SecurePass analyses length, common patterns, complexity, and common breaches — 100% client-side security."
+=======
     <title>SecurePass — Password Strength Checker</title>
     <meta
       name="description"
       content="Check your password strength instantly in your browser. SecurePass analyses length, patterns, and common weaknesses — 100% client-side, nothing is ever sent anywhere."
+>>>>>>> db64188dcb810b9ffca9bfcbfd4a209378a4ff43
     />
     <meta name="robots" content="index, follow" />
 
@@ -16,7 +23,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+<<<<<<< HEAD
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+=======
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+>>>>>>> db64188dcb810b9ffca9bfcbfd4a209378a4ff43
       rel="stylesheet"
     />
 
@@ -24,6 +35,494 @@
   </head>
 
   <body>
+<<<<<<< HEAD
+    <!-- ══════════════ AMBIENT BACKGROUND GLOW ══════════════ -->
+    <div class="bg-mesh" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <!-- ══════════════ TOP NAVIGATION BAR ══════════════ -->
+    <header class="top-nav-wrap">
+      <nav class="top-nav" aria-label="Main Navigation">
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo" aria-label="SecurePass Home">
+          <div class="logo-shield-badge">
+            <svg class="logo-shield-svg" viewBox="0 0 24 24" width="28" height="28" fill="none">
+              <path d="M12 2L4 5V11C4 16.5 7.4 21.6 12 23C16.6 21.6 20 16.5 20 11V5L12 2Z" fill="#00E5A0" />
+              <path d="M12 8C10.9 8 10 8.9 10 10V11H9C8.45 11 8 11.45 8 12V16C8 16.55 8.45 17 9 17H15C15.55 17 16 16.55 16 16V12C16 11.45 15.55 11 15 11H14V10C14 8.9 13.1 8 12 8ZM11.2 11V10C11.2 9.56 11.56 9.2 12 9.2C12.44 9.2 12.8 9.56 12.8 10V11H11.2Z" fill="#070D17" />
+            </svg>
+          </div>
+          <div class="logo-copy">
+            <span class="logo-name">Secure<span class="accent-text">Pass</span></span>
+            <span class="logo-tagline">Stronger Passwords. Safer You.</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#hero" class="nav-item">Home</a></li>
+          <li><a href="#login-modal" class="nav-item open-modal-btn" data-modal="login-modal">Login</a></li>
+          <li><a href="#analyse-card" class="nav-item active">Analyse Password</a></li>
+          <li><a href="#generator-modal" class="nav-item open-modal-btn" data-modal="generator-modal">Generate Password</a></li>
+          <li><a href="#how-it-works-modal" class="nav-item open-modal-btn" data-modal="how-it-works-modal">How It Works</a></li>
+          <li><a href="#report-modal" class="nav-item open-modal-btn" data-modal="report-modal">Report</a></li>
+          <li><a href="guidance.html" class="nav-item">Guidance</a></li>
+        </ul>
+
+        <!-- Right Action Items -->
+        <div class="nav-actions">
+          <button class="nav-profile-btn open-modal-btn" data-modal="login-modal" aria-label="User profile">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </button>
+          <button class="btn-nav-login open-modal-btn" data-modal="login-modal">Login</button>
+          <button class="nav-mobile-toggle" id="nav-mobile-toggle" aria-label="Toggle navigation menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ══════════════ MAIN CONTENT ══════════════ -->
+    <main class="site-main">
+      <!-- ── SECTION 1: HERO SECTION ── -->
+      <section class="hero-section" id="hero">
+        <div class="hero-container">
+          <!-- Left Column: Copy & Highlights -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="badge-icon">🛡️</span>
+              <span class="badge-text">PASSWORD SECURITY CHECKER</span>
+            </div>
+
+            <h1 class="hero-title">
+              Check Your Password.<br />
+              <span class="hero-highlight">Stay Safe Online.</span>
+            </h1>
+
+            <p class="hero-description">
+              SecurePass helps you analyse your password strength in real time,
+              identify risks, and gives you expert guidance to keep your accounts safe.
+            </p>
+
+            <div class="hero-features">
+              <div class="feature-item">
+                <div class="feature-icon-pill">
+                  <span class="f-icon">⚡</span>
+                </div>
+                <div class="feature-text">
+                  <strong>Real-time</strong>
+                  <span>Security Check</span>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon-pill">
+                  <span class="f-icon">🛡️</span>
+                </div>
+                <div class="feature-text">
+                  <strong>Detailed</strong>
+                  <span>Security Report</span>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon-pill">
+                  <span class="f-icon">🔒</span>
+                </div>
+                <div class="feature-text">
+                  <strong>Expert</strong>
+                  <span>Guidance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Center Column: Cyber Holographic Shield Graphic with PIN Dots -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hologram-stage">
+              <div class="hologram-orbits">
+                <div class="orbit-ring ring-1"></div>
+                <div class="orbit-ring ring-2"></div>
+                <div class="orbit-ring ring-3"></div>
+              </div>
+
+              <div class="shield-core">
+                <svg class="hologram-shield-svg" viewBox="0 0 100 120" width="100" height="120" fill="none">
+                  <defs>
+                    <linearGradient id="shieldGlowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#00E5A0" stop-opacity="0.9" />
+                      <stop offset="100%" stop-color="#0080FF" stop-opacity="0.3" />
+                    </linearGradient>
+                  </defs>
+                  <!-- Outer Shield -->
+                  <path d="M50 4L14 17V54C14 83 30 108 50 116C70 108 86 83 86 54V17L50 4Z" stroke="url(#shieldGlowGrad)" stroke-width="3" fill="rgba(0, 229, 160, 0.08)" />
+                  <!-- Inner Lock -->
+                  <rect x="36" y="52" width="28" height="26" rx="4" fill="#00E5A0" />
+                  <path d="M42 52V42C42 37.58 45.58 34 50 34C54.42 34 58 37.58 58 42V52" stroke="#00E5A0" stroke-width="4.5" stroke-linecap="round" fill="none" />
+                  <circle cx="50" cy="62" r="3" fill="#070D17" />
+                  <line x1="50" y1="65" x2="50" y2="71" stroke="#070D17" stroke-width="2.5" stroke-linecap="round" />
+                </svg>
+              </div>
+
+              <!-- Real-time Interactive Password Dots Pill -->
+              <div class="hero-pin-pill" id="hero-pin-pill">
+                <span class="pin-dot"></span>
+                <span class="pin-dot"></span>
+                <span class="pin-dot"></span>
+                <span class="pin-dot"></span>
+                <span class="pin-dot"></span>
+                <span class="pin-dot"></span>
+                <span class="pin-dot"></span>
+                <span class="pin-dot"></span>
+                <span class="pin-status" id="hero-pin-status">✔</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Safety Matters Card -->
+          <div class="hero-side-card">
+            <div class="side-card-inner">
+              <h2 class="side-card-title">Your Digital Safety Matters</h2>
+              <p class="side-card-desc">
+                A strong password is your first line of defence. Let's make it stronger.
+              </p>
+              <a href="#analyse-card" class="btn-side-action" id="get-started-btn">
+                <span>Get Started</span>
+                <span class="arrow-glyph" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SECTION 2: MAIN CHECKER CARD (1 Analyse Your Password) ── -->
+      <section class="analyse-section" id="analyse-card">
+        <div class="main-card">
+          <!-- Card Header with Numbered Badge -->
+          <div class="card-header-row">
+            <div class="step-num-badge">1</div>
+            <div class="step-title-wrap">
+              <h2 class="step-title">Analyse Your Password</h2>
+              <p class="step-subtitle">
+                Enter your password below and see its strength, risks and detailed analysis in real time.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card Body Split: Left Input, Right Gauge & Checks -->
+          <div class="checker-grid">
+            <!-- Left Side: Password Field & Action -->
+            <div class="checker-left">
+              <div class="input-container">
+                <div class="input-box">
+                  <span class="box-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                  </span>
+                  <input
+                    id="password-input"
+                    class="main-pw-input"
+                    type="password"
+                    placeholder="Enter your password"
+                    autocomplete="off"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    spellcheck="false"
+                    aria-label="Enter password to analyse"
+                  />
+                  <button
+                    id="toggle-visibility"
+                    class="box-eye-btn"
+                    type="button"
+                    aria-label="Show password"
+                    title="Show / hide password"
+                  >
+                    <svg id="eye-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                  </button>
+                  <button
+                    id="clear-btn"
+                    class="box-clear-btn"
+                    type="button"
+                    aria-label="Clear password"
+                    title="Clear password"
+                  >✕</button>
+                </div>
+
+                <button id="check-password-btn" class="btn-check-main" type="button">
+                  <span>Check Password</span>
+                  <span class="arrow-glyph" aria-hidden="true">→</span>
+                </button>
+
+                <div class="checker-privacy-note">
+                  <span class="privacy-lock">🔒</span>
+                  <span>100% Client-Side. Your password never leaves your browser.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side: Rotating Speedometer Arm & 4 Security Checks -->
+            <div class="checker-right">
+              <!-- Radial Speedometer Gauge with Rotating Arm -->
+              <div class="gauge-display-unit" aria-label="Password strength meter">
+                <div class="gauge-visual-wrap">
+                  <svg class="speedometer-svg" viewBox="0 0 220 135" width="220" height="135">
+                    <defs>
+                      <linearGradient id="meterArcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#FF4D6D" />
+                        <stop offset="25%" stop-color="#FF8C42" />
+                        <stop offset="50%" stop-color="#FFC857" />
+                        <stop offset="75%" stop-color="#00E5A0" />
+                        <stop offset="100%" stop-color="#00E5A0" />
+                      </linearGradient>
+
+                      <linearGradient id="meterArmGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+                        <stop offset="0%" stop-color="#00E5A0" />
+                        <stop offset="100%" stop-color="#FFFFFF" />
+                      </linearGradient>
+
+                      <filter id="meterGlowFilter" x="-30%" y="-30%" width="160%" height="160%">
+                        <feGaussianBlur stdDeviation="3" result="blur" />
+                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                      </filter>
+                    </defs>
+
+                    <!-- Background Arc Rail -->
+                    <path class="arc-rail-bg" d="M 30 115 A 80 80 0 0 1 190 115" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="12" stroke-linecap="round" />
+
+                    <!-- Spectrum Glow Underlay -->
+                    <path class="arc-spectrum-rail" d="M 30 115 A 80 80 0 0 1 190 115" fill="none" stroke="url(#meterArcGrad)" stroke-width="4" stroke-opacity="0.35" stroke-linecap="round" />
+
+                    <!-- Dynamic Active Arc Fill -->
+                    <path id="meter-active-arc" class="arc-active-fill" d="M 30 115 A 80 80 0 0 1 190 115" fill="none" stroke="#00E5A0" stroke-width="12" stroke-linecap="round" stroke-dasharray="251.3" stroke-dashoffset="251.3" />
+
+                    <!-- Rotating Speedometer Meter Arm (Needle) -->
+                    <g id="gauge-needle" class="gauge-meter-arm">
+                      <path d="M 106 115 L 109 42 L 110 32 L 111 42 L 114 115 Z" fill="url(#meterArmGrad)" />
+                      <line x1="110" y1="110" x2="110" y2="36" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" />
+                      <circle id="meter-tip-light" cx="110" cy="32" r="3.5" fill="#00E5A0" filter="url(#meterGlowFilter)" />
+                      <!-- Center Hub -->
+                      <circle cx="110" cy="115" r="12" fill="#0D1726" stroke="#00E5A0" stroke-width="2.5" />
+                      <circle id="meter-hub-dot" cx="110" cy="115" r="4.5" fill="#00E5A0" />
+                    </g>
+                  </svg>
+
+                  <!-- Center Value Readout -->
+                  <div class="meter-center-readout">
+                    <span id="score-number" class="meter-score-text">—</span>
+                    <span class="meter-caption">Password Strength</span>
+                    <span id="strength-badge" class="strength-badge badge-empty">—</span>
+                  </div>
+                </div>
+
+                <!-- Hidden progress bar for ARIA and sync -->
+                <div class="meter-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="display:none;">
+                  <div id="meter-fill" class="meter-fill"></div>
+                </div>
+              </div>
+
+              <!-- 4 Security Checks List Matching Mockup -->
+              <div class="security-checks-col" id="checks-list">
+                <!-- Check 1: Length -->
+                <div class="check-row check-neutral" id="check-length">
+                  <div class="check-left-meta">
+                    <span class="check-badge-icon">
+                      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2v20M6 8v8M18 8v8"></path>
+                      </svg>
+                    </span>
+                    <span class="check-title">Length</span>
+                  </div>
+                  <span class="check-state-symbol" id="detail-length">—</span>
+                </div>
+
+                <!-- Check 2: Common Patterns -->
+                <div class="check-row check-neutral" id="check-common">
+                  <div class="check-left-meta">
+                    <span class="check-badge-icon">
+                      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                      </svg>
+                    </span>
+                    <span class="check-title">Common Patterns</span>
+                  </div>
+                  <span class="check-state-symbol" id="detail-common">—</span>
+                </div>
+
+                <!-- Check 3: Breach Check -->
+                <div class="check-row check-neutral" id="check-breach">
+                  <div class="check-left-meta">
+                    <span class="check-badge-icon">
+                      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                      </svg>
+                    </span>
+                    <span class="check-title">Breach Check</span>
+                  </div>
+                  <span class="check-state-symbol" id="detail-breach">—</span>
+                </div>
+
+                <!-- Check 4: Complexity -->
+                <div class="check-row check-neutral" id="check-complexity">
+                  <div class="check-left-meta">
+                    <span class="check-badge-icon">
+                      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        <polyline points="9 12 11 14 15 10"></polyline>
+                      </svg>
+                    </span>
+                    <span class="check-title">Complexity</span>
+                  </div>
+                  <span class="check-state-symbol" id="detail-complexity">—</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SECTION 3: YOUR SECURITY JOURNEY ── -->
+      <section class="journey-section">
+        <div class="journey-card">
+          <div class="journey-header">
+            <h2 class="journey-title">Your Security Journey</h2>
+            <p class="journey-subtitle">
+              Follow these steps to create and maintain a strong password strategy.
+            </p>
+          </div>
+
+          <div class="journey-steps-grid">
+            <!-- Step 1 -->
+            <a href="#analyse-card" class="step-card step-cyan">
+              <div class="step-icon-circle">
+                <span class="step-badge-mini">1</span>
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </div>
+              <h3 class="step-card-title">Analyse Your Password</h3>
+              <p class="step-card-desc">Check strength and risks</p>
+            </a>
+
+            <div class="journey-arrow" aria-hidden="true">→</div>
+
+            <!-- Step 2 -->
+            <a href="#generator-modal" class="step-card step-teal open-modal-btn" data-modal="generator-modal">
+              <div class="step-icon-circle">
+                <span class="step-badge-mini">2</span>
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 2l-2 2m-1.5 1.5L14 9l-1.5-1.5 1.5-1.5L12 4l-4 4 1.5 1.5L8 11l-1.5-1.5L4 12l2 2 3-3 3 3 2-2-3-3 7-7z"></path>
+                  <circle cx="7.5" cy="16.5" r="4.5"></circle>
+                </svg>
+              </div>
+              <h3 class="step-card-title">Generate a Secure Password</h3>
+              <p class="step-card-desc">Get a strong, random password</p>
+            </a>
+
+            <div class="journey-arrow" aria-hidden="true">→</div>
+
+            <!-- Step 3 -->
+            <a href="#report-modal" class="step-card step-purple open-modal-btn" data-modal="report-modal">
+              <div class="step-icon-circle">
+                <span class="step-badge-mini">3</span>
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <h3 class="step-card-title">View Your Security Report</h3>
+              <p class="step-card-desc">Understand the results</p>
+            </a>
+
+            <div class="journey-arrow" aria-hidden="true">→</div>
+
+            <!-- Step 4 -->
+            <a href="guidance.html" class="step-card step-amber">
+              <div class="step-icon-circle">
+                <span class="step-badge-mini">4</span>
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <polyline points="9 12 11 14 15 10"></polyline>
+                </svg>
+              </div>
+              <h3 class="step-card-title">Follow the Guidance</h3>
+              <p class="step-card-desc">Stay safe with expert tips</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SECTION 4: 4 QUICK-ACCESS FEATURE CARDS ── -->
+      <section class="feature-cards-section">
+        <div class="feature-cards-grid">
+          <!-- Card 1: Password Generator -->
+          <article class="hub-card hub-cyan">
+            <div class="hub-icon-box">
+              <span class="hub-icon">🎲</span>
+            </div>
+            <h3 class="hub-title">Password Generator</h3>
+            <p class="hub-desc">Create strong, random passwords with one click.</p>
+            <button class="btn-hub-action open-modal-btn" data-modal="generator-modal">
+              <span>Go to Generator</span>
+              <span class="arrow-glyph" aria-hidden="true">→</span>
+            </button>
+          </article>
+
+          <!-- Card 2: How Each Check Works -->
+          <article class="hub-card hub-blue">
+            <div class="hub-icon-box">
+              <span class="hub-icon">⚙️</span>
+            </div>
+            <h3 class="hub-title">How Each Check Works</h3>
+            <p class="hub-desc">Understand what we look for and why it matters.</p>
+            <button class="btn-hub-action open-modal-btn" data-modal="how-it-works-modal">
+              <span>Learn More</span>
+              <span class="arrow-glyph" aria-hidden="true">→</span>
+            </button>
+          </article>
+
+          <!-- Card 3: Password Security Guidance -->
+          <article class="hub-card hub-purple">
+            <div class="hub-icon-box">
+              <span class="hub-icon">📖</span>
+            </div>
+            <h3 class="hub-title">Password Security Guidance</h3>
+            <p class="hub-desc">Best practices to keep your accounts safe and secure.</p>
+            <a href="guidance.html" class="btn-hub-action">
+              <span>View Guidance</span>
+              <span class="arrow-glyph" aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <!-- Card 4: Cybersecurity Awareness -->
+          <article class="hub-card hub-amber">
+            <div class="hub-icon-box">
+              <span class="hub-icon">🛡️</span>
+            </div>
+            <h3 class="hub-title">Cybersecurity Awareness</h3>
+            <p class="hub-desc">Stay informed about online threats, scams and safe habits.</p>
+            <button class="btn-hub-action open-modal-btn" data-modal="awareness-modal">
+              <span>Explore Tips</span>
+              <span class="arrow-glyph" aria-hidden="true">→</span>
+            </button>
+          </article>
+        </div>
+      </section>
+=======
     <!-- ══════════════ BACKGROUND ══════════════ -->
     <div class="bg-grid" aria-hidden="true"></div>
     <div class="bg-glow" aria-hidden="true"></div>
@@ -337,16 +836,243 @@
       </div>
       <!-- end right column -->
 
+>>>>>>> db64188dcb810b9ffca9bfcbfd4a209378a4ff43
     </main>
 
     <!-- ══════════════ FOOTER ══════════════ -->
     <footer class="site-footer">
+<<<<<<< HEAD
+      <div class="footer-inner">
+        <!-- Left: Brand -->
+        <div class="footer-brand">
+          <div class="logo-shield-badge mini">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+              <path d="M12 2L4 5V11C4 16.5 7.4 21.6 12 23C16.6 21.6 20 16.5 20 11V5L12 2Z" fill="#00E5A0" />
+            </svg>
+          </div>
+          <div class="footer-copy">
+            <span class="footer-name">Secure<span class="accent-text">Pass</span></span>
+            <span class="footer-tagline">Stronger Passwords. Safer You.</span>
+          </div>
+        </div>
+
+        <!-- Center: Links -->
+        <nav class="footer-links" aria-label="Footer links">
+          <a href="#hero">Home</a>
+          <span class="sep">|</span>
+          <a href="#how-it-works-modal" class="open-modal-btn" data-modal="how-it-works-modal">About</a>
+          <span class="sep">|</span>
+          <a href="#privacy-modal" class="open-modal-btn" data-modal="privacy-modal">Privacy Policy</a>
+          <span class="sep">|</span>
+          <a href="mailto:support@securepass.local">Contact</a>
+        </nav>
+
+        <!-- Right: Social & Note -->
+        <div class="footer-right">
+          <div class="social-icons" aria-label="Social media links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+          <span class="footer-safe-note">Built for a safer digital world.</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ══════════════ MODALS FOR REAL-TIME ACTIONS ══════════════ -->
+
+    <!-- Modal 1: Password Generator Modal -->
+    <div class="modal-backdrop" id="generator-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-gen-title">
+      <div class="modal-box">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <span class="modal-icon">🎲</span>
+            <h3 id="modal-gen-title" class="modal-title">Password Generator</h3>
+          </div>
+          <button class="modal-close-btn" aria-label="Close generator modal">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <p class="modal-intro">
+            Generates high-entropy passwords using <code>crypto.getRandomValues()</code> — cryptographically secure randomness inside your browser.
+          </p>
+
+          <div class="gen-output-container">
+            <code id="gen-output" class="gen-display-code" aria-live="polite">Click Generate to create a password</code>
+          </div>
+
+          <div class="gen-controls">
+            <div class="gen-length-row">
+              <label for="gen-length" class="gen-label">Length: <strong id="gen-length-display">16</strong> chars</label>
+              <input id="gen-length" class="gen-slider" type="range" min="8" max="64" value="16" />
+            </div>
+
+            <div class="gen-checks-grid">
+              <label class="gen-toggle-lbl">
+                <input id="gen-uppercase" type="checkbox" checked /> Uppercase (A–Z)
+              </label>
+              <label class="gen-toggle-lbl">
+                <input id="gen-lowercase" type="checkbox" checked /> Lowercase (a–z)
+              </label>
+              <label class="gen-toggle-lbl">
+                <input id="gen-numbers" type="checkbox" checked /> Numbers (0–9)
+              </label>
+              <label class="gen-toggle-lbl">
+                <input id="gen-symbols" type="checkbox" checked /> Symbols (!@#$…)
+              </label>
+            </div>
+          </div>
+
+          <div class="gen-actions-row">
+            <button id="generate-btn" class="btn-modal-primary" type="button">⚡ Generate New</button>
+            <button id="copy-gen-btn" class="btn-modal-secondary" type="button">📋 Copy to Clipboard</button>
+            <button id="use-gen-btn" class="btn-modal-accent" type="button">↑ Test in Checker</button>
+          </div>
+          <div id="copy-toast" class="copy-toast-msg" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2: How It Works Modal -->
+    <div class="modal-backdrop" id="how-it-works-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-how-title">
+      <div class="modal-box">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <span class="modal-icon">⚙️</span>
+            <h3 id="modal-how-title" class="modal-title">How Each Check Works</h3>
+          </div>
+          <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+        </div>
+
+        <div class="modal-body modal-scrollable">
+          <div class="info-block">
+            <h4>📏 1. Length Check</h4>
+            <p>Every character multiplies the total combinatorial search space. 8 characters is roughly billions of possibilities; 16 characters exceeds trillions of quadrillions.</p>
+          </div>
+          <div class="info-block">
+            <h4>📋 2. Common Patterns &amp; Dictionary</h4>
+            <p>Compares against the top 10,000 common passwords like <code>password123</code> or <code>qwerty</code> used by automated bot credential attacks.</p>
+          </div>
+          <div class="info-block">
+            <h4>🛡️ 3. Breach &amp; Sequence Verification</h4>
+            <p>Screens for keyboard walks (e.g. <code>asdfg</code>), repeated digits (e.g. <code>11111</code>), and obvious sequences that hash-crackers prioritize.</p>
+          </div>
+          <div class="info-block">
+            <h4>🔒 4. Character Complexity &amp; Variety</h4>
+            <p>Evaluates uppercase, lowercase, numbers, and symbols to ensure multi-alphabet entropy that defies rainbow table lookup techniques.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3: Security Report Modal -->
+    <div class="modal-backdrop" id="report-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-report-title">
+      <div class="modal-box">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <span class="modal-icon">📄</span>
+            <h3 id="modal-report-title" class="modal-title">Password Security Report</h3>
+          </div>
+          <button class="modal-close-btn" aria-label="Close report modal">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="report-summary-box">
+            <div class="report-score-stat">
+              <span class="report-score-val" id="report-score-val">0</span>
+              <span class="report-score-lbl">OVERALL SECURITY SCORE</span>
+            </div>
+            <div class="report-badge-stat">
+              <span id="report-badge-val" class="strength-badge badge-empty">—</span>
+              <span class="report-badge-lbl">RISK LEVEL</span>
+            </div>
+          </div>
+
+          <ul class="report-details-list" id="report-details-list">
+            <li><span>Analysis Status:</span> <strong id="report-status-text">Enter a password in the checker</strong></li>
+            <li><span>Cryptographic Entropy:</span> <strong id="report-entropy-text">—</strong></li>
+            <li><span>Crack Time Estimate:</span> <strong id="report-crack-text">—</strong></li>
+            <li><span>Client-Side Integrity:</span> <strong style="color:#00E5A0">Verified Private (No Data Sent)</strong></li>
+          </ul>
+
+          <div class="modal-footer-actions">
+            <button class="btn-modal-secondary" onclick="window.print()">🖨️ Print Report</button>
+            <button class="btn-modal-primary modal-close-btn">Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4: Cybersecurity Awareness Modal -->
+    <div class="modal-backdrop" id="awareness-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-aware-title">
+      <div class="modal-box">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <span class="modal-icon">🛡️</span>
+            <h3 id="modal-aware-title" class="modal-title">Cybersecurity Awareness</h3>
+          </div>
+          <button class="modal-close-btn" aria-label="Close awareness modal">&times;</button>
+        </div>
+
+        <div class="modal-body modal-scrollable">
+          <div class="info-block">
+            <h4>🔑 Multi-Factor Authentication (MFA)</h4>
+            <p>Always pair strong passwords with an authenticator app (TOTP) or hardware security key (FIDO2). Even if a password leaks, MFA blocks 99% of attacks.</p>
+          </div>
+          <div class="info-block">
+            <h4>🚫 Say No to Password Reuse</h4>
+            <p>If you reuse one password on 10 sites and one site is breached, attackers use credential stuffing to unlock the other 9 accounts in minutes.</p>
+          </div>
+          <div class="info-block">
+            <h4>🗄️ Adopt a Password Manager</h4>
+            <p>Humans cannot remember 100 unique 20-character passwords. Use a reputable password manager so you only ever have to memorize one strong master passphrase.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5: Login Modal Demonstration -->
+    <div class="modal-backdrop" id="login-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-login-title">
+      <div class="modal-box login-modal-box">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <span class="modal-icon">👤</span>
+            <h3 id="modal-login-title" class="modal-title">SecurePass Portal</h3>
+          </div>
+          <button class="modal-close-btn" aria-label="Close login modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p class="modal-intro">Educational cybersecurity demonstration account.</p>
+          <div class="login-field">
+            <label class="field-label" for="login-email">Email or Username</label>
+            <input class="login-input" id="login-email" type="email" placeholder="user@domain.com" />
+          </div>
+          <div class="login-field">
+            <label class="field-label" for="login-pw">Master Password</label>
+            <input class="login-input" id="login-pw" type="password" placeholder="••••••••••••" />
+          </div>
+          <button class="btn-check-main" style="width:100%; margin-top:1rem;" type="button" onclick="alert('Demo: SecurePass operates 100% client-side without storing user accounts.')">
+            Sign In Securely →
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+=======
       <p>
         SecurePass · Built with vanilla HTML, CSS &amp; JS ·
         <span class="footer-note">No passwords are ever transmitted or stored.</span>
       </p>
     </footer>
 
+>>>>>>> db64188dcb810b9ffca9bfcbfd4a209378a4ff43
     <script src="script.js"></script>
   </body>
 </html>
